@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Self-Learner</title>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Self Learner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="/school.html">School Study</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SIgnUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Self-Learner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create Account on Self-Learner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            <a class="navbar-brand" href="/school.html">
+                <h5 class="text-center fs-1">Science</h5>
+            </a>
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote">
+                <p>Maharashtra Board SSC 9th - Laws of Motion</p>
+                <footer class="blockquote-footer"> Exerice Solution </footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="container d-inline-block my-2">
+        <h4>1. Match the first column with appropriate entries in the second and third columns and remake the table.
+        </h4>
+
+        <table class="table table-bordered my-2">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Column1</th>
+                    <th scope="col">Column2</th>
+                    <th scope="col">Column3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Negative Accerelation</td>
+                    <td>The velocity of the object remains constant</td>
+                    <td>A car, initial at rest reaches a velocity of 50 km/hr in 10second</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Positive accerelation</td>
+                    <td>the velocity of the object decreases</td>
+                    <td>A vehicle is moving with a velocity of 25 m/s</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Zero accerelation</td>
+                    <td>The velocity of object increases</td>
+                    <td>A vehicle moving with the velocity of 10m/s, stops after 5 seconds.</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background: yellow;">
+        <h4 class="my-4">Answer:</h4>
+    </div>
+
+    <div class="container d-inline-block my-2">
+
+
+        <table class="table table-bordered my-2">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Column1</th>
+                    <th scope="col">Column2</th>
+                    <th scope="col">Column3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Negative Accerelation</td>
+                    <td> the velocity of the object decreases</td>
+                    <td> A vehicle moving with the velocity of 10m/s, stops after 5 seconds.</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Positive accerelation</td>
+                    <td>the velocity of object increases</td>
+                    <td>A car, initial at rest reaches a velocity of 50 km/hr in 10second</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Zero accerelation</td>
+                    <td>The velocity of the object remains constant</td>
+                    <td>A vehicle is moving with a velocity of 25 m/s</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <hr style="border: 5px solid black;">
+
+    <h4 class="mx-2 fs-3">2. Clarify the differences</h4>
+
+
+
+    <h4 class=" mx-2 fs-3">3. Complete the following table.</h4>
+
+    <div class="container d-inline-block my-2">
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">t (sec)</th>
+                    <th scope="col">v = u + at (m/s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2</th>
+                    <th scope="row">4</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <th scope="row">5</th>
+                    <th scope="row">2</th>
+                    <th scope="row">20</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s <sup>2</sup>)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">t (sec)</th>
+                    <th scope="col">s = ut + 1/2 at <sup>2</sup>(m)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">5</th>
+                    <th scope="row">12</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <th scope="row">-</th>
+                    <th scope="row">4</th>
+                    <th scope="row">92</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">s (m)</th>
+                    <th scope="col">v<sup>2</sup> = u <sup>2</sup> + 2as(m/s) <sup>2
+
+                        </sup> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">4</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                    <th scope="row">8</th>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <th scope="row">5</th>
+                    <th scope="row">8.4</th>
+                    <th scope="row">10</th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div style="background: yellow;">
+        <h4 class="my-4">Answer:</h4>
+    </div>
+
+    <div class="container d-inline-block my-2">
+
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">t (sec)</th>
+                    <th scope="col">v = u + at (m/s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2</th>
+                    <th scope="row">4</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <th scope="row">5</th>
+                    <th scope="row">2</th>
+                    <th scope="row">20</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s <sup>2</sup>)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">t (sec)</th>
+                    <th scope="col">s = ut + 1/2 at <sup>2</sup>(m)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">5</th>
+                    <th scope="row">12</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <th scope="row">-</th>
+                    <th scope="row">4</th>
+                    <th scope="row">92</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered my-3">
+            <thead>
+                <tr>
+                    <th scope="col">u (m/s)</th>
+                    <th scope="col">a (m/s <sup>2</sup>)</th>
+                    <th scope="col">s (m)</th>
+                    <th scope="col">v<sup>2</sup> = u <sup>2</sup> + 2as(m/s) <sup>2
+
+                        </sup> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">4</th>
+                    <th scope="row">3</th>
+                    <th scope="row">-</th>
+                    <th scope="row">8</th>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <th scope="row">5</th>
+                    <th scope="row">8.4</th>
+                    <th scope="row">10</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "firebase/app";
+            import { getAnalytics } from "firebase/analytics";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyDaOTApsGDtE8P4fi0-LobWJ2Wy1bv6Dac",
+                authDomain: "self-learner-d6c3c.firebaseapp.com",
+                projectId: "self-learner-d6c3c",
+                storageBucket: "self-learner-d6c3c.appspot.com",
+                messagingSenderId: "386492359481",
+                appId: "1:386492359481:web:b5d782ff13d49bce52fee8",
+                measurementId: "G-LFC9MV0WXT"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+
+        </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+
+</html>
